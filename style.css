@@ -1,0 +1,377 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-color: #008148;
+    --second-color: #1e3932; 
+}
+section {
+    padding: 50px 10%;
+}
+img {
+    width: 100%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 140px;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: #008148;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.navbar a:hover {
+    color: #000000;
+    transition-duration: 0.5s;
+}
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/home-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 1rem;
+}
+.home-text {
+    flex: 1 1 17rem;
+}
+.home-img {
+    flex: 1 1 17rem;
+}
+.home-img img {
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+    50% {
+        transform: translate(-0px, 11px);
+    }
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin: 0.5rem 0 1.4rem;
+}
+.home-text h1 {
+    font-size: 3.2rem;
+    color: #008148;
+    font-weight: bolder;
+}
+/*.home-text span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}*/
+.btn {
+    padding: 7px 16px;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    font-weight: 500;
+}
+.btn:hover {
+    color: black;
+    background: white;
+}
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.heading h1 {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0rem;
+}
+.shop-container .box {
+    flex: 1 1 10rem;
+    background: var(--main-color);
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+.shop-container .box .box-img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+.shop-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+}
+.stars {
+    margin: 1rem 0 0.1rem;
+}
+.shop-container .box .stars .bx {
+    color: #fff;
+}
+.shop-container .box h2 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.shop-container .box span {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+}
+.box .btn {
+    border: 2px solid white;
+    color: white;
+}
+.box .btn:hover {
+    background: white;
+    color: var(--second-color);
+}
+.box.food-1 {
+    background: url('https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/eea2c2dc-7730-44aa-88d1-e68c3d01cdc4_5b3ba5d8-473e-459a-a565-80f19364531a_Go-Biz_20200411_171634.jpeg?auto=format');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box.food-2 {
+    background: url('https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/71f9f5bc-7432-46ea-8a58-e7b664baa23d_015c6407-db8c-44ee-9840-14ae7348a6c7_Go-Biz_20200411_171649.jpeg?auto=format');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box.food-3 {
+    background: url('https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/99fdfac1-0632-4b43-81d8-53d54b0bf7ac_373bbd30-7624-4000-8791-b6cfa926cf2c_Go-Biz_20200411_135352.jpeg?auto=format');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.delivery-img,
+.app-img {
+    flex: 1 1 21rem;
+}
+.delivery-text,
+.app-text {
+    flex: 1 1 21rem;
+}
+.delivery-text h2,
+.app-text h2 {
+    font-size: 1.2rem;
+    color: var(--second-color);
+}
+.delivery-text p,
+.app-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+.delivery-text .btn,
+.app-text .btn {
+    color: black;
+    border: 2px solid black;
+}
+.delivery-text .btn:hover,
+.app-text .btn:hover {
+    color: white;
+    background-color: black;
+    transition-duration: 0.5s;
+}
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    background: #231F20;
+    gap: 1.5rem;
+}
+.about-img {
+    flex: 1 1 17rem;
+}
+.about-text {
+    flex: 1 1 17rem;
+}
+.about-text h2 {
+    font-size: 1.5rem;
+    color: #008148;
+}
+.about-text p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+    color: white;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social a {
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.social a .bx {
+    padding: 5px;
+    color: #fff;
+    background: #000000;
+    border-radius: 50%;
+}
+.social a .bx:hover {
+    background-color: var(--main-color);
+}
+.links {
+    margin: 1rem 0 1rem;
+}
+.links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+}
+.links a:hover {
+    color: var(--main-color);
+}
+@media (max-width: 1150px) {
+    header {
+        padding: 18px 7%;
+    }
+    section {
+        padding: 50px 7%;
+    }
+    .home-text h1 {
+        font-size: 2.44rem;
+    }
+    .home-text span {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 991px) {
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        padding: 11px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .home-text h1 {
+        font-size: 2.44rem;
+    }
+    .home-text span {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px) {
+    .home-text {
+        padding-top: inherit;
+    }
+    .shop-container .box {
+        margin-top: 6rem;
+    }
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+    .heading span {
+        font-size: 0.9rem;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 364px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+}
